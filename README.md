@@ -14,7 +14,7 @@ A blue green deployment demo on kubernetes
 <img width="331" alt="image" src="https://user-images.githubusercontent.com/49971693/164517121-947aed0c-5b75-4840-b9fb-0d3db17ed0a5.png">
 
 4. Confirm that it works
-Get the node IP
+```Get the node IP & node port number```
 <img width="261" alt="image" src="https://user-images.githubusercontent.com/49971693/164519699-070148c0-ba31-4a80-94f0-a0f053f49439.png">
 <img width="718" alt="image" src="https://user-images.githubusercontent.com/49971693/164519725-02b87d01-d2f5-40eb-b9c5-6ea5608d30bd.png">
 <img width="186" alt="image" src="https://user-images.githubusercontent.com/49971693/164519798-c3cc3c10-76e9-4e9e-a5b8-478dc0439c41.png">

@@ -9,8 +9,10 @@ A blue green deployment demo on kubernetes
 <img width="416" alt="image" src="https://user-images.githubusercontent.com/49971693/164511545-1fea16d5-d646-4142-9f60-8919c7c29bed.png">
 <img width="1263" alt="image" src="https://user-images.githubusercontent.com/49971693/164511569-195e8856-1916-4c62-9158-ba13b317cee8.png">
 
-4. Copy the existing deployment file app.yaml to app-green.yaml
-5. Change labels in delpoyment selector matchLabels from env: original to env: green
-6. Confirm the new green deployment is working
-7. Edit the app service to point the selectors to green
-8. Confirm the new service is working
+3. Create a service for the deployment
+4. 
+5. Copy the existing deployment file blue.yaml to yaml.yaml
+6. Change labels in delpoyment selector matchLabels from env: original to env: green
+7. Confirm the new green deployment is working
+8. Edit the app service to point the selectors to green
+9. Confirm the new service is working

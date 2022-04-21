@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-frontend-green
+  namespace: bluegreen
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: app-frontend
+      env: green
+  template:
+    metadata:
+      labels:
+        app: app-frontend
+        env: green
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:stable
+        ports:
+        - containerPort: 80
+        volumeMounts:
+        - name: labels
+          mountPath: /usr/share/nginx/html
+      volumes:
+      - name: labels
+        downwardAPI:
+          items:
+          - path: index.html
+            fieldRef:
+              fieldPath: metadata.labels

@@ -13,7 +13,9 @@ spec:
     nodePort: 30081
   selector:
     app: web-frontend
-    env: original
+    # env: original 
+    # change this to switch to green deployment
+    env: green
   type: NodePort
 status:
   loadBalancer: {}

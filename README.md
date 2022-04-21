@@ -1,4 +1,4 @@
-# blue-green-kubernetes-deployment-demo
+# Kubernetes Blue/Green Deployment Demo
 A blue green deployment demo on kubernetes
 1. Create a namespace
 

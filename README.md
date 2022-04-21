@@ -49,5 +49,11 @@ kubectl get deploy -n bluegreen-ns
 <img width="548" alt="image" src="https://user-images.githubusercontent.com/49971693/164517537-0c5e85c3-7129-44f2-b665-b20a8411c815.png">
 
 6. Confirm the new green deployment is working
-7. Edit the app service to point the selectors to green
-8. Confirm the new service is working
+```
+kubectl exec -it web-frontend-7459c9fcdc-fqmh2  -n bluegreen-ns -- bash
+```
+<img width="503" alt="image" src="https://user-images.githubusercontent.com/49971693/164532842-4cf16903-87b5-4295-9b0a-62d10938ec1e.png">
+
+8. Edit the app service to point the selectors to green
+   
+10. Confirm the new service is working

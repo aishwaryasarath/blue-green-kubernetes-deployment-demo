@@ -54,6 +54,9 @@ kubectl exec -it web-frontend-7459c9fcdc-fqmh2  -n bluegreen-ns -- bash
 ```
 <img width="503" alt="image" src="https://user-images.githubusercontent.com/49971693/164532842-4cf16903-87b5-4295-9b0a-62d10938ec1e.png">
 
-8. Edit the app service to point the selectors to green
-   
-10. Confirm the new service is working
+8. Edit the app service to point the selectors to green & confirm the service is working
+```
+ k -n bluegreen-ns run tmp2 --restart=Never --rm -i --image=busybox -i -- wget -O- bgsvc:80  
+```
+<img width="822" alt="image" src="https://user-images.githubusercontent.com/49971693/164538282-3379e939-c37a-4647-b2c7-c149b51898d1.png">
+
